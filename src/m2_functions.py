@@ -19,18 +19,18 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
-
+import math
 
 def main():
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
-
-
+    print(pythagorean(3, 4))
+    turtle_draw('red', 6)
 ###############################################################################
 #
-# TODO: 3a.  Define a function immediately blow this _TODO_.
+# DONE: 3a.  Define a function immediately blow this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -38,15 +38,18 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
+def pythagorean(x, y):
+    z = math.sqrt((x**2)+(y**2))
+    return z
 
 
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -62,15 +65,23 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function and print the returned value,
+# DONE: 4b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-
+def turtle_draw(color, thickness):
+    window = rg.TurtleWindow()
+    turtle_1 = rg.SimpleTurtle()
+    turtle_1.pen = rg.Pen('green', thickness)
+    turtle_2 = rg.SimpleTurtle()
+    turtle_2.pen = rg. Pen(color, 5)
+    turtle_1.forward(100)
+    turtle_2.backward(100)
+    window.close_on_mouse_click()
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
