@@ -148,7 +148,7 @@ def better_draw_circles(point, radius):
         turtle.left(90)
 
         turtle.pen_down()
-        turtle.draw_circle(radius* k)  # Radius 15, 30, 45, 60, ...
+        turtle.draw_circle(radius * k)  # Radius 15, 30, 45, 60, ...
 
 
 ###############################################################################
@@ -206,7 +206,7 @@ def even_better_draw_circles(point, radius, circle_num, color, thickness):
 
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #
 # Finally, comment-out the existing calls to  even_better_draw_circles  and
 # add code in   main  to draw various circles that form a BEAUTIFUL picture!
