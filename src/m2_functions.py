@@ -28,6 +28,8 @@ def main():
     """
     print(pythagorean(3, 4))
     turtle_draw('red', 6)
+
+
 ###############################################################################
 #
 # DONE: 3a.  Define a function immediately blow this _TODO_.
@@ -79,6 +81,7 @@ def turtle_draw(color, thickness):
     turtle_2.backward(100)
     window.close_on_mouse_click()
 
+
 ###############################################################################
 #
 # DONE: 5.
@@ -105,3 +108,6 @@ def turtle_draw(color, thickness):
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 main()
+
+
+
